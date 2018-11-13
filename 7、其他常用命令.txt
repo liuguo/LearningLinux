@@ -1,0 +1,16 @@
+1、显示当前所在位置： pwd
+2、搜索命令：find / -name "test.txt" 全盘搜索名称为test.txt的文件，返回文件所在路径
+3、搜索命令：whereis test.txt 全盘搜索名称为test.txt的文件，返回文件所在路径
+4、查看进程：ps -ef （全局查看）
+ps -ef | grep 进程名 （具体查看） |含义：上一条命令的结果是下一条命令的输入
+grep:筛选
+5、查看ip地址： ifconfig 或 ip addr
+6、软件包管理器：yum search 软件
+7、下载软件包：yum install tools 软件包
+
+8、权限操作：
+chmod u+w test.txt 为test.txt增加当前用户的w(写入)权限
+u：当前用户，g：同组用户，o：其它用户
+r：可读，w：可写，e：可执行
+chmod 777 test.txt 对test.txt的所有用户增加读、写、执行权限
+777即二进制111 111 111 分别对应当前用户 同组用户 其它用户的读、写、执行权限
