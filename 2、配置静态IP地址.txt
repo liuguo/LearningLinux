@@ -1,0 +1,9 @@
+
+修改配置文件： etc/sysconfig/network-scripts/ifcfg-eno16777736
+注释掉dhcp：#BOOTPROTO="dhcp"
+添加配置项：
+	IPADDR=192.168.32.XXX(虚拟网络编辑器的NAT设置里可以看网关，此ip与网关前3项要相同)
+	NETMASK=255.255.255.0
+	GATEWAY=192.168.32.1
+	DNS1=192.168.0.23（windows的cmd下用命令 ifconfig -all 查看DNS服务器地址，任选其一即可）
+重启网卡：service network restart
